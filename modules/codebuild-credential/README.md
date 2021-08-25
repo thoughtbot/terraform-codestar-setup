@@ -2,10 +2,10 @@
 
 Creates a CodeBuild credential for connecting AWS CodeBuild to GitHub.
 
-This is only necessary if you want to run the CodeBuild projects for ECR images
-and manifest generation when pull requests are opened. It's necessary because
-CodeBuild projects can't currently use a CodeStar connection outside of
-CodePipeline, and CodePipeline doesn't support running for pull requests.
+This is necessary if you want to run CodeBuild projects when pull requests are
+opened. It's necessary because CodeBuild projects can't currently use a CodeStar
+connection outside of CodePipeline, and CodePipeline doesn't support running for
+pull requests.
 
 If you want to run your projects for pull requests, you can either:
 
